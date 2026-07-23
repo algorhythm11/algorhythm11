@@ -13,7 +13,7 @@
 - 🌱 Currently learning **Data Structures & Algorithms, AI/ML, DBMS, OS**
 - 💻 Passionate about Python and AI
 - 🚀 Building Machine Learning & Web Development projects
-- 📫 Reach me: **your_email@example.com**
+- 📫 Reach me:mohitraj191130@gmail.com
 - ⚡ Fun Fact: I enjoy solving coding problems and learning new technologies.
 
 ---
