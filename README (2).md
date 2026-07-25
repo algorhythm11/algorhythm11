@@ -22,7 +22,7 @@
 
 ### 🚀 About Me
 
-```python
+
 class Algorhythm11:
     def __init__(self):
         self.role       = "SDE | AI/ML Engineer"
@@ -33,7 +33,7 @@ class Algorhythm11:
 
     def say_hi(self):
         print("Thanks for stopping by — let's build something great!")
-```
+
 
 ---
 
