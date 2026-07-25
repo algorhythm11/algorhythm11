@@ -1,0 +1,48 @@
+name: Generate Trophies
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # once a day
+  workflow_dispatch:        # manual trigger from Actions tab
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Download trophy image (with retries + validation)
+        run: |
+          for i in 1 2 3 4 5; do
+            echo "Attempt $i..."
+            curl -sSL -f "https://github-profile-trophy.vercel.app/?username=algorhythm11&theme=onedark&no-frame=true&row=1&column=7" -o trophies.svg || true
+
+            if [ -s trophies.svg ] && head -c 200 trophies.svg | grep -q "<svg"; then
+              echo "Valid SVG received."
+              break
+            else
+              echo "Invalid response, retrying in 15s..."
+              rm -f trophies.svg
+              sleep 15
+            fi
+          done
+
+          if [ ! -s trophies.svg ] || ! head -c 200 trophies.svg | grep -q "<svg"; then
+            echo "Failed to fetch a valid trophy SVG after multiple attempts."
+            exit 1
+          fi
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add trophies.svg
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update trophies.svg"
+          git push
