@@ -151,10 +151,11 @@ class Algorhythm11:
 
 <div align="center">
 
-<a href="https://linkedin.com/in/your-linkedin" target="_blank">
+<a href="www.linkedin.com/in/mohit-raj-40545331b
+" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
-<a href="mailto:your-email@example.com">
+<a href="mailto:your-mohitraj191130@gmail.com.com">
   <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
