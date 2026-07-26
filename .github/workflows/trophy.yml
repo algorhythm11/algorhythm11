@@ -18,31 +18,46 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Download trophy image (with retries + validation)
+      - name: Download trophy image (tries multiple mirrors, never fails the build)
         run: |
-          for i in 1 2 3 4 5; do
-            echo "Attempt $i..."
-            curl -sSL -f "https://github-profile-trophy.vercel.app/?username=algorhythm11&theme=onedark&no-frame=true&row=1&column=7" -o trophies.svg || true
+          URLS=(
+            "https://github-profile-trophy.vercel.app/?username=algorhythm11&theme=onedark&no-frame=true&row=1&column=7"
+            "https://github-profile-trophy-liard-delta.vercel.app/?username=algorhythm11&theme=onedark&no-frame=true&row=1&column=7"
+            "https://github-profile-trophy-fork-two.vercel.app/?username=algorhythm11&theme=onedark&no-frame=true&row=1&column=7"
+            "https://github-profile-trophy-winning.vercel.app/?username=algorhythm11&theme=onedark&no-frame=true&row=1&column=7"
+            "https://github-profile-trophy-kannan.vercel.app/?username=algorhythm11&theme=onedark&no-frame=true&row=1&column=7"
+          )
 
-            if [ -s trophies.svg ] && head -c 200 trophies.svg | grep -q "<svg"; then
-              echo "Valid SVG received."
+          SUCCESS=false
+
+          for url in "${URLS[@]}"; do
+            echo "Trying: $url"
+            curl -sSL -f "$url" -o trophies_tmp.svg || true
+
+            if [ -s trophies_tmp.svg ] && head -c 200 trophies_tmp.svg | grep -q "<svg"; then
+              echo "Valid SVG received from $url"
+              mv trophies_tmp.svg trophies.svg
+              SUCCESS=true
               break
             else
-              echo "Invalid response, retrying in 15s..."
-              rm -f trophies.svg
-              sleep 15
+              echo "Failed or invalid response from this mirror, trying next..."
+              rm -f trophies_tmp.svg
+              sleep 5
             fi
           done
 
-          if [ ! -s trophies.svg ] || ! head -c 200 trophies.svg | grep -q "<svg"; then
-            echo "Failed to fetch a valid trophy SVG after multiple attempts."
-            exit 1
+          if [ "$SUCCESS" = false ]; then
+            echo "::warning::All trophy mirrors failed (likely rate-limited). Keeping existing trophies.svg if present, skipping update this run."
           fi
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add trophies.svg
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update trophies.svg"
-          git push
+          if [ -f trophies.svg ]; then
+            git add trophies.svg
+            git diff --quiet && git diff --staged --quiet || git commit -m "Update trophies.svg"
+            git push
+          else
+            echo "No trophies.svg to commit."
+          fi
