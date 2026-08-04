@@ -131,7 +131,7 @@ class Algorhythm11:
   <img src="card-fraud.svg" alt="Credit Card Fraud Detection AI"/>
 </a>
 <br/><br/>
-<a href="https://github.com/algorhythm11/Codec_Real-Time-Stock-Dashboard">
+<a href="https://github.com/algorhythm11/VyaparAI">
   <img src="card-stock.svg" alt="Real-Time Stock Dashboard"/>
 </a>
 
