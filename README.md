@@ -28,30 +28,34 @@
 
 </div>
 
----
+👨‍💻 About Me
 
-## 👨‍💻 About Me
+Hi, I'm Mohit Raj, a Computer Science & Engineering student interested in Software Development, Artificial Intelligence, Machine Learning and Backend Engineering.
 
-Hi, I'm **Mohit Raj**, a Computer Science & Engineering student interested in **Software Development, Artificial Intelligence, Machine Learning and Backend Engineering**.
+I enjoy building practical applications that combine software engineering with AI/ML, while continuously improving my problem-solving skills through DSA and LeetCode.
 
-I enjoy building practical applications that combine software engineering with AI/ML, while continuously improving my problem-solving skills through **DSA and LeetCode**.
+🎓 Computer Science & Engineering student
 
-- 🎓 Computer Science & Engineering student
-- 💻 Interested in Software Development and Backend Engineering
-- 🤖 Exploring AI/ML, Deep Learning and Computer Vision
-- 🐍 Strong focus on Python
-- 🌐 Building full-stack applications with React and TypeScript
-- ⚙️ Developing APIs and backend systems with FastAPI
-- 🗄️ Working with MongoDB and SQL
-- 🧩 Practicing Data Structures & Algorithms
-- ☁️ Learning cloud deployment and system design
-- 🚀 Building and deploying real-world projects
+💻 Interested in Software Development and Backend Engineering
 
----
+🤖 Exploring AI/ML, Deep Learning and Computer Vision
 
-## 🧠 Current Focus
+🐍 Strong focus on Python
 
-```text
+🌐 Building full-stack applications with React and TypeScript
+
+⚙️ Developing APIs and backend systems with FastAPI
+
+🗄️ Working with MongoDB and SQL
+
+🧩 Practicing Data Structures & Algorithms
+
+☁️ Learning cloud deployment and system design
+
+🚀 Building and deploying real-world projects
+
+🧠 Current Focus
+
 Software Development
         │
         ├── Frontend → React + TypeScript + Tailwind CSS
@@ -65,31 +69,28 @@ Software Development
         ├── DSA      → LeetCode + Problem Solving
         │
         └── Cloud    → Deployment + Backend Architecture
-```
 
----
+🛠️ Tech Stack
 
-# 🛠️ Tech Stack
-
-### 💻 Languages
+💻 Languages
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,cpp,java,javascript,typescript,c&theme=dark" alt="Programming Languages"/>
 </p>
 
-### 🌐 Frontend
+🌐 Frontend
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,react,tailwind,vite&theme=dark" alt="Frontend Technologies"/>
 </p>
 
-### ⚙️ Backend, Database & Tools
+⚙️ Backend, Database & Tools
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=fastapi,nodejs,mongodb,mysql,git,github,docker&theme=dark" alt="Backend Technologies"/>
 </p>
 
-### 🤖 AI / ML
+🤖 AI / ML
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&theme=dark" alt="AI ML Technologies"/>
@@ -103,11 +104,9 @@ Software Development
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
 </p>
 
----
+🚀 Featured Projects
 
-# 🚀 Featured Projects
-
-## 🏪 VyaparAI — AI-Powered Business Platform
+🏪 VyaparAI — AI-Powered Business Platform
 
 <div align="center">
 
@@ -121,36 +120,66 @@ Software Development
 
 </div>
 
-**VyaparAI** is a full-stack AI-powered business platform designed to combine business management, analytics and AI assistance in one application.
+VyaparAI is a full-stack AI-powered business platform designed to combine business management, analytics and AI assistance in one application.
 
-### ✨ Key Features
+✨ Key Features
 
-- 🤖 AI-powered business assistance
-- 📊 Business dashboard and analytics
-- 🔐 User authentication
-- 👤 User management
-- ⚙️ REST API architecture
-- 🗄️ MongoDB database integration
-- 🌐 Responsive React frontend
-- 🧠 Gemini-powered AI capabilities
-- ☁️ Cloud deployment
-- 🔄 Frontend ↔ Backend integration
+🤖 AI-powered business assistance
 
-### 🧰 Technology Stack
+📊 Business dashboard and analytics
 
-| Layer | Technology |
-|---|---|
-| Frontend | React, TypeScript, Tailwind CSS |
-| Backend | Python, FastAPI |
-| Database | MongoDB |
-| AI | Gemini API |
-| Frontend Deployment | Vercel |
-| Backend Deployment | Render |
-| Version Control | Git & GitHub |
+🔐 User authentication
 
-### 🏗️ Architecture
+👤 User management
 
-```text
+⚙️ REST API architecture
+
+🗄️ MongoDB database integration
+
+🌐 Responsive React frontend
+
+🧠 Gemini-powered AI capabilities
+
+☁️ Cloud deployment
+
+🔄 Frontend ↔ Backend integration
+
+🧰 Technology Stack
+
+Layer
+
+Technology
+
+Frontend
+
+React, TypeScript, Tailwind CSS
+
+Backend
+
+Python, FastAPI
+
+Database
+
+MongoDB
+
+AI
+
+Gemini API
+
+Frontend Deployment
+
+Vercel
+
+Backend Deployment
+
+Render
+
+Version Control
+
+Git & GitHub
+
+🏗️ Architecture
+
                          ┌─────────────────┐
                          │      User       │
                          └────────┬────────┘
@@ -175,28 +204,23 @@ Software Development
              │   MongoDB    │       │  Gemini API  │
              │   Database   │       │      AI      │
              └──────────────┘       └──────────────┘
-```
 
-### ☁️ Deployment
+☁️ Deployment
 
-```text
 Frontend   → Vercel
 Backend    → Render
 Database   → MongoDB
 Repository → GitHub
-```
 
-### ⚡ Loading / Performance
+⚡ Loading / Performance
 
-The frontend is deployed on **Vercel** and the backend is deployed on **Render**.
+The frontend is deployed on Vercel and the backend is deployed on Render.
 
-If the Render backend is on a sleeping/free instance, the **first API request can take longer because the backend needs to wake up**. Once active, subsequent requests are generally faster.
+If the Render backend is on a sleeping/free instance, the first API request can take longer because the backend needs to wake up. Once active, subsequent requests are generally faster.
 
-This is normal cloud **cold-start behavior**.
+This is normal cloud cold-start behavior.
 
----
-
-## 💳 Credit Card Fraud Detection AI
+💳 Credit Card Fraud Detection AI
 
 <div align="center">
 
@@ -208,19 +232,24 @@ This is normal cloud **cold-start behavior**.
 
 A Machine Learning project focused on identifying potentially fraudulent financial transactions.
 
-### 🔍 Key Areas
+🔍 Key Areas
 
-- 📊 Exploratory Data Analysis
-- 🧹 Data preprocessing
-- ⚖️ Imbalanced data handling
-- 🤖 Machine Learning
-- 📈 Model evaluation
-- 🔎 Fraud pattern analysis
-- 📊 Data visualization
+📊 Exploratory Data Analysis
 
-### 🧰 Technologies
+🧹 Data preprocessing
 
-```text
+⚖️ Imbalanced data handling
+
+🤖 Machine Learning
+
+📈 Model evaluation
+
+🔎 Fraud pattern analysis
+
+📊 Data visualization
+
+🧰 Technologies
+
 Python
 Pandas
 NumPy
@@ -228,11 +257,8 @@ Scikit-Learn
 Matplotlib
 Machine Learning
 Google Colab
-```
 
----
-
-## 🧩 LeetCode & DSA
+🧩 LeetCode & DSA
 
 <div align="center">
 
@@ -242,11 +268,10 @@ Google Colab
 
 </div>
 
-I regularly practice **Data Structures & Algorithms** to improve logical thinking, coding ability and interview preparation.
+I regularly practice Data Structures & Algorithms to improve logical thinking, coding ability and interview preparation.
 
-### 📚 Topics
+📚 Topics
 
-```text
 Arrays
 Strings
 Hashing
@@ -261,11 +286,8 @@ Recursion
 Greedy Algorithms
 Dynamic Programming
 Graphs
-```
 
----
-
-# 📊 GitHub Statistics
+📊 GitHub Statistics
 
 <div align="center">
 
@@ -293,26 +315,9 @@ Graphs
 
 </div>
 
-> **Why no external GitHub Stats cards?**  
-> The common `github-readme-stats` and streak services depend on third-party servers and GitHub API requests. If those services are rate-limited or unavailable, GitHub displays broken images. This README intentionally uses GitHub/Shield-based badges here so the profile does not show broken statistics cards.
+Why no external GitHub Stats cards?The common github-readme-stats and streak services depend on third-party servers and GitHub API requests. If those services are rate-limited or unavailable, GitHub displays broken images. This README intentionally uses GitHub/Shield-based badges here so the profile does not show broken statistics cards.
 
----
-
-# 📈 GitHub Activity
-
-<div align="center">
-
-<a href="https://github.com/algorhythm11">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=algorhythm11&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="GitHub Activity Graph"/>
-</a>
-
-</div>
-
-> If this third-party activity graph ever fails, it can be removed without affecting the rest of the README.
-
----
-
-# 🏆 Achievements
+🏆 Achievements
 
 <div align="center">
 
@@ -320,28 +325,49 @@ Graphs
 
 </div>
 
----
-
-# 📚 Currently Learning
+📚 Currently Learning
 
 <div align="center">
 
-| Area | Focus |
-|---|---|
-| 🤖 AI / ML | Machine Learning, Deep Learning, CNNs |
-| 👁️ Computer Vision | Image Processing & Deep Learning |
-| ⚙️ Backend | FastAPI, REST APIs & Architecture |
-| 🌐 Full Stack | React, TypeScript & Tailwind |
-| 🧩 DSA | LeetCode & Algorithmic Problem Solving |
-| 🏗️ System Design | Scalable Backend Architecture |
-| ☁️ Cloud | Deployment & Cloud Fundamentals |
-| 🧠 AI Applications | LLM-powered Applications |
+Area
+
+Focus
+
+🤖 AI / ML
+
+Machine Learning, Deep Learning, CNNs
+
+👁️ Computer Vision
+
+Image Processing & Deep Learning
+
+⚙️ Backend
+
+FastAPI, REST APIs & Architecture
+
+🌐 Full Stack
+
+React, TypeScript & Tailwind
+
+🧩 DSA
+
+LeetCode & Algorithmic Problem Solving
+
+🏗️ System Design
+
+Scalable Backend Architecture
+
+☁️ Cloud
+
+Deployment & Cloud Fundamentals
+
+🧠 AI Applications
+
+LLM-powered Applications
 
 </div>
 
----
-
-# 💼 What I Build
+💼 What I Build
 
 <div align="center">
 
@@ -365,9 +391,7 @@ Graphs
 
 </div>
 
----
-
-# 📫 Connect With Me
+📫 Connect With Me
 
 <div align="center">
 
@@ -385,14 +409,24 @@ Graphs
 
 </div>
 
----
-
 <div align="center">
 
-### 🚀 Build • Learn • Debug • Improve • Ship
+🚀 Build • Learn • Debug • Improve • Ship
 
 <br>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0093E9,100:80D0C7&height=120&section=footer" alt="Footer"/>
+
+</div>
+
+🐍 Contribution Snake
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/algorhythm11/algorhythm11/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" width="100%"/>
+
+<br/>
+
+<b>My GitHub contributions, turned into a snake animation 🐍</b>
 
 </div>
